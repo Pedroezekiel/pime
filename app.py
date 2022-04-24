@@ -262,15 +262,15 @@
 # fruits.extend(["cherry","sugarcain"])
 # # print(fruits)
 # import random
-# test_seed = int(input("create a seed number: "))
+# test_seed = input("create a seed number: ")
 # random.seed(test_seed)
 # namesAsCSV =input("Give me everybody's names, seperated by a comma. ")
 # names = namesAsCSV.split(", ")
-# num_item = (len(namesAsCSV))
+# num_item = (len(names))
 # random_choice = random.randint(0,num_item-1 )
 # person_who_will_pay = names[random_choice]
 # print(f"{person_who_will_pay} will buy the meal today" )
-# random_choices = random.randint(0, number_item -1)
+# random_choices = random.randint(0, num_item -1)
 # payment = names[random_choices]
 # print(payment)
 #
@@ -333,11 +333,9 @@ comment
 # map = [row1, row2, row3]
 # print(f"{row1}\n{row2}\n{row3}")
 # position = int(input("Where do you want to put the treasure? "))
-# #position2 = int(input("enter"))
-# #position3 = position+position2
 # if position == 11 :
-#     row1[0] = "*"
-#     print(f"{row1}\n{row2}\n{row3}")
+#    row1[0] = "*"
+#    print(f"{row1}\n{row2}\n{row3}")
 # elif position == 21:
 #     row1[1] = "*"
 #     print(f"{row1}\n{row2}\n{row3}")
@@ -362,7 +360,7 @@ comment
 # elif position == 33:
 #     row3[2] = "*"
 #     print(f"{row1}\n{row2}\n{row3}")
-# import random
+#import random
 #
 # Rock = ("""
 #     _______
@@ -429,11 +427,11 @@ comment
 # user_input = int(input("Guess your number"))
 # user_input_question = int(input("you lose try again"))
 # factor = 0
-# computer_input = random.randint(1 , 5)
- # if user_input == computer_input:
- # print("you win")
- # else:
-#  #    print("you lose")
+# computer_input = random.randint(1, 5)
+# if user_input == computer_input:
+#     print("you win")
+# else:
+#     print("you lose")
 # while user_input != computer_input:
 #      user_input = input("you lose,try again")
 #      print(user_input)
@@ -442,9 +440,253 @@ comment
 # else:
 #     print("you win")
 # fruits = ["Apple", "peach", "pear"]
+# names = ["enny", "ezekiel", "pedro"]
+# for name in names:
+#     print("")
 # for fruit in fruits:
-#     print(fruit)
-print("Convert pounds into pounds")
-pounds = float(input("Enter a value in pounds\n"))
-kilogram = 0.454
-print(f"{pounds} pounds is {pounds*kilogram} kilogram")
+#     print(f"{name}  {fruit}")
+
+
+
+# print("Convert pounds into pounds")
+# pounds = float(input("Enter a value in pounds\n"))
+# kilogram = 0.454
+# print(f"{pounds} pounds is {pounds*kilogram} kilogram")
+
+# print("Sum the digits in an integer")
+# user_input = int(input("Enter a number"))
+# print(f"The sum of the digits is {user_input//10}")
+
+# print("Sum the digits in an integer")
+# user_input = (input("enter a number"))
+# print(user_input[input()])
+# lenght_of_user_input = len(user_input)
+# int(user_input[0])
+# int(user_input[1])
+# int(user_input[2])
+# user_input_answer = ( int(user_input[2])+int(user_input[0])+ int(user_input[1]))
+# print(user_input_answer)
+# int(user_input[0])
+# int(user_input[2])
+# int(user_input[1])
+# user_input_calu = (int(user_input[1])+int(user_input[2]+int(user_input[0])))
+# print(user_input_calu)
+# if user_input == user_input_number1 and user_input == user_input_number2 and user_input == user_input_number3 and user_input == user_input_number4:
+#     user_input_calu = int(user_input_number1 + user_input_number2 + user_input_number3 + user_input_number4)
+#     print(user_input_calu)
+#
+# name = input("Enter a number")
+# names = name.split(", ")
+# lenght = len(name)
+# # output = names[0:1]
+# print(lenght)
+# # # print(names[0:-2])
+# import random
+# test_seed = input("create a seed number: ")
+# random.seed(test_seed)
+# namesAsCSV =input("Give me everybody's names, seperated by a comma. ")
+# names = namesAsCSV.split(", ")
+# length = len(names)
+# random_choice = random.randint(0, length -1)
+# person_who_will_pay = names[random_choice]
+# print(f"{person_who_will_pay}")
+
+# import random
+# print('Welcome TO The Land of guess')
+# computer_guess = random.randint(1,10)
+# lives = 5
+# active = True
+# while lives > 0:
+#     user_guess = int(input('Guess a number: '))
+#     if user_guess == computer_guess:
+#         print('you win')
+#         break
+#     elif user_guess > computer_guess:
+#         lives -= 1
+#         if lives < 1:
+#             print("you lose")
+#         elif lives >= 1:
+#             print(f"your guess is too high, you have {lives} lives left")
+#     elif user_guess < computer_guess:
+#         lives -= 1
+#         if lives < 1:
+#             print("you lose")
+#             print()
+#         elif lives >= 1:
+#             print(f'your guess is too low, you have {lives} lives left')
+# name = (input("enter a number"))
+# sum1 = int(name[0])+int(name[1])
+# sum2 = int(name[0])+int(name[2])+int(name[1])
+# if name == name[0:2]:
+#     print(sum1)
+# elif name == name[0:3]:
+#     print(sum2)
+#
+
+# total = 0
+# for number in range(2  ,101,2):
+#     total += number
+# print(total)
+#
+# total = 0
+# for number in range(1,101):
+#     if number % 15 == 0:
+#         number = "Fizz Buzz"
+#     elif number % 5 == 0:
+#          number = "Buzz"
+#     elif number % 3 == 0:
+#          number = "Fizz"
+#     print(number)
+# userinput = input()
+# stack = []
+# for bracket in userinput:
+#     if bracket in "{[(":
+#         stack.append(bracket)
+#     if bracket in "}])":
+#         peak = stack[-1]
+#         if bracket == ")" and peak == "(":
+#             stack.pop()
+#         elif bracket == "}" and peak == "{":
+#             stack.pop()
+#         elif bracket == "]" and peak == "[":
+#             stack.pop()
+#         else:
+#             print(False)
+#
+# if len(stack) == 0:
+#     print(True)
+# else:
+#     print(False)
+# import random
+# secret_number = random.randint(0,10)
+# lives = 10
+# numbers_of_guess = 1
+# while numbers_of_guess<= lives:
+#     lives -= 1
+#     userinput = int(input("Enter the secret number: "))
+#     if userinput == secret_number:
+#         print("you win")
+#         break
+#     elif lives == 0:
+#         if userinput > secret_number:
+#             print("your number is too high")
+#         if userinput  < secret_number:
+#             print("your number is too low")
+#             print("you lose")
+#     elif userinput != secret_number:
+#         if userinput > secret_number:
+#             print("your number is too high")
+#             print(f"you have {lives} left")
+#         if userinput  < secret_number:
+#             print("your number is too low")
+#             print(f"you have {lives} left")
+#
+# def rotate_list(list,k:int):
+#     var1 = list[: :k]
+#     var = list[: : -1]
+#     print(var1)
+#     print(var)
+# rotate_list([2,3,4,5],2)
+
+# import statistics
+# grade = [45, 93, 85, 85, 89, 90]
+# print(statistics.mean(grade))
+# print(statistics.median(grade))
+# print(statistics.mode(grade))
+# print(sorted(grade))
+
+# amount = 2/3
+# print(amount)
+# print(f"{amount:.2f}")
+
+# from decimal import *
+# getcontext().prec = 2
+# ans =Decimal(2)/Decimal(3)
+# print(ans)
+# from decimal import Decimal
+# # principal = Decimal("10000000,00")
+# rate = Decimal("0.05")
+# x = Decimal("10.5")
+# y = Decimal("2")
+# print(x//6)
+# principal =100
+# rate = 1
+#
+# for year in range(1, 11):
+#   amount = principal * (1 + rate) ** year
+# #   print(f'{year:>0} { amount:<10.0f} ')
+# import random
+#
+# frequency1 = 0
+# frequency2 = 0
+# frequency3 = 0
+# frequency4 = 0
+# frequency5 = 0
+# frequency6 = 0
+#
+# for roll in range(6_000_000):
+#   face = random.randrange(1 , 7)
+#
+#   if face == 1:
+#     frequency1 += 1
+#   if face == 2:
+#     frequency2 +=  2
+#   if face == 3:
+#    frequency3 +=  3
+#   if face == 4:
+#     frequency4 += 4
+#   if face == 5:
+#      frequency5 += 5
+#   if face == 6:
+#     frequency6 += 6
+#
+# print(f'Face{"Frequency":>13}')
+# print(f'{1:>4}{frequency1:>13}')
+# print(f'{2:>4}{frequency2:>13}')
+# print(f'{3:>4}{frequency3:>13}')
+# print(f'{4:>4}{frequency4:>13}')
+# print(f'{5:>4}{frequency5:>13}')
+# print(f'{6:>4}{frequency6:>13}')
+import random
+
+def roll_dice():
+ """Roll two dice and return their face values as a tuple."""
+ die1 = random.randrange(1, 7)
+ die2 = random.randrange(1, 7)
+ return (die1, die2) # pack die face values into a tuple
+
+def display_dice(dice):
+ """Display one roll of the two dice."""
+ die1, die2 = dice # unpack the tuple into variables die1 and die2
+ print(f'Player rolled {die1} + {die2} = {sum(dice)}')
+
+die_values = roll_dice() # first roll
+display_dice(die_values)
+
+# determine game status and point, based on first roll
+sum_of_dice = sum(die_values)
+
+if sum_of_dice in (7, 11): # win
+ game_status = 'WON'
+elif sum_of_dice in (2, 3, 12): # lose
+ game_status = 'LOST'
+else: # remember point
+    game_status = 'CONTINUE'
+    my_point = sum_of_dice
+    print('Point is', my_point)
+
+ # continue rolling until player wins or loses
+while game_status == 'CONTINUE':
+ die_values = roll_dice()
+ display_dice(die_values)
+ sum_of_dice = sum(die_values)
+ if sum_of_dice == my_point: # win by making point
+        game_status = 'WON'
+ elif sum_of_dice == 7: # lose by rolling 7
+        game_status = 'LOST'
+
+# display "wins” or "loses” message
+if game_status == 'WON':
+ print('Player wins')
+else:
+ print('Player loses')

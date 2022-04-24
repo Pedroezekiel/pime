@@ -2,7 +2,7 @@
 # first_number = int(user_input)
 # if first_number % 2 == 0:
 #      print(first_number, " is an even number")
-#
+
 # else:
 #      print(first_number, " is an odd number")
 # user_input = input("Enter a number = ")
@@ -80,8 +80,8 @@
 # tip = price_percentage / 100 * price
 #
 #
-#total = (price + tip) / spliting_of_bill
-#print(f"each person should pay: {round(total)} ")
+# total = (price + tip) / spliting_of_bill
+# print(f"each person should pay: {round(total)} ")
 # print("Welcome to the rollerCoaster")
 # height = int(input("enter height \n"))
 # bill = 0
@@ -121,7 +121,7 @@
 #     print("answer is even ")
 # else:
 #     print("answer is odd")
-#
+
 # print("leap year")
 # year = int(input("enter a year to check if it is a leap year or not \n"))
 # if year % 4 == 0 and not year % 100 == 0 or year % 400 == 0:
@@ -148,13 +148,13 @@
 #     price = 20
 #     print(f"Medium pizza = ${price}")
 #     if add_pepperoni == "Y":
-#         print("pepperoni for Medium pizza: +$3")
-#         price += 3
-#         print(f"Medium pizza and pepperoni = {price}")
+#        print("pepperoni for Medium pizza: +$3")
+#        price += 3
+#        print(f"Medium pizza and pepperoni = {price}")
 #     if extra_cheese == "Y":
 #             price += 1
 #             print("extra chess is + $1")
-#     print(f"Your final bill is: ${price}")
+#             print(f"Your final bill is: ${price}")
 # elif size == "L":
 #     price = 25
 #     print(f"Large pizza = ${price}")
@@ -193,10 +193,112 @@
 #     print(f"your score is {your_true_love}")
 
 # star = "*"
-#for i in range(1,11):
+# for i in range"(1,11):
 #    print(f"{star * i:<10} {star * (11 - i):<10} {star * (11 - i):>10} {star * i:>10}")
-dividend = int(input("enter the dividend"))
-divisor = int(input("enter the divisior"))
+# print("""
+# ***********************
+# welcome to my store
+# ************************""")
+# products = ["maggi", " salt", "rice"]
+# prices =   [10, 50, 300]
+# quantities = []
+# colums =["products", "quantities", "prices", "totals"]
+# print(f"{colums[0]:>15} |  {colums[1]:>2} | {colums[2]:>6}")
+# i = 0
+# while i < len(products):
+#     quantities.append(int(input(products[i])))
+#     i += 1
+# i = 0
+# while i < len(products):
+#     print(f"{products[i]:>15}  |  {quantities[i]:>2} ")
+#
+# for product in products:
+#     a = product
+#     print(a[0]       , end=" ")
+#     print()
+# for quantity in  quantities:
+#      b = quantity
+#      print(b)
+# for price in prices:
+#     c = price
+#     print(c)
 
+# for total in totals:
+#     c = total
+#     add_up += int(total)
+#     print(c)
+# print(add_up)
 
+# def do_something(lst: list) -> None:
+#     lst[1] = 100
+#
+# a = [ 1, 2, 3, 4, ]
+# do_something(a)
+# print(a)
+# n = 0
+# number = int(input("enter a num"))
+# print("number","\t", "square", "\t\t", "cube")
+# while number >= n:
+#     print(f"{n:>10}{n*n:>13}{n*n*n:>19}")
+#
+#     n += 1
+# grade = int(input())
+# result = "passed" if grade >= 60 else "falied"
+# print(result)
+# total = 0
+# grade_counter = 0
+#
+# grade = int(input("Enter grade, -1 to end: "))
+#
+# while grade != -1:
+#      total +=grade
+#      grade_counter += 1
+#      grade = int(input("enter grade, -1 to end: "))
+# if grade_counter != 0:
+#      average = total / grade_counter
+#      print(f"Class average is {average: .2f}")
+# else:
+#      print("No grades were entered")
 
+# def add(a: int = 2, b: str = "color") -> tuple[int, str]:
+#     return a, b
+#
+#
+# print(add(3, "3"))
+# print(add(3))
+# print(add())
+# print(add(b=5, a="you"))
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+# print([[x,y,z] for x in range (n) if n != [3] for y in range (n) if n!= [3] for z in range (n) ])
+# x = 2
+# y = 2
+# z = 2
+# n = 2
+#
+#
+# lst = []
+# for x in range (n):
+#     for y in range(n):
+#         for z in range(n):
+#                 lst.append([x,y,z])
+# print(lst)
+import random
+word_list =["ardvark", "baboon", "camel"]
+legnth =len(word_list)
+chosen_word = random.randint(0 ,legnth-1)
+c = word_list[chosen_word]
+print(f"psst, the solution is {c}.")
+display = [ ]
+k = random.choice(word_list)
+c = display.append(k)
+for letter in k:
+    print("_",end=" ")
+print()
+guess = str(input("guess a letter")).lower()
+for cs in c:
+    result = cs if guess == cs else cs
+    print(result )
+#
