@@ -32,6 +32,29 @@
 # kilograms = 0.454
 # print(f"{pounds} pounds is {pounds*kilograms} kilograms")
 #
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# sum = num1+num2 +num3
+# product = num1*num2*num3
+# average =sum// 3
+# largest = max(num1,num2,num3)
+# smallest = min(num1,num2,num3)
+# print("The sum of the numbers =", sum)
+# print("The product of the numbers =", product)
+# print("The average =", average)
+# print("The largest =", largest)
+# # print("The smallest =", smallest)
+# userInput = float(input("enter first number")),float(input("enter second number")),float(input("enter third number"))
+# num = 0
+#
+# for input in userInput:
+#
+#     if num < input:
+#         same = input
+#
+#     if num > input:
+#         num = input
 # numbers = (input("Enter a number"))
 # total = 0
 # for number in numbers:
@@ -39,7 +62,6 @@
 # print(total,)
 
 # import random
-#
 # names = input("enter names of buyers: \n").split(", ")
 # length = len(names)
 # random_choice = random.randint(0,length-1)
@@ -84,7 +106,6 @@
 #
 # v = get_digit(1029,0)
 # print(v)
-numbers = [1, 2, 3, 4, 5]
-num = numbers.count([0],len(numbers))
-for num in numbers:
-    print(num,end=" ")
+import os
+os.chdir(r"C:\Users\USER\Documents")
+print(os.getcwd())

@@ -1,4 +1,3 @@
-
 # age = 20
 # name = "John Smith"
 # isNewPatient = True;
@@ -15,8 +14,8 @@
 # userWeight = input("Your weight please")
 # converting = int(userWeight)*0.45
 # print(" you are " ,converting , " kilogram ")
-#course = "Python for Beginners"
-#print(course[1:-1])
+# course = "Python for Beginners"
+# print(course[1:-1])
 # first = 'Pedro'
 # last = 'Ezekiel'
 # message = first + " ["  + last + "] is a coder"
@@ -360,7 +359,7 @@ comment
 # elif position == 33:
 #     row3[2] = "*"
 #     print(f"{row1}\n{row2}\n{row3}")
-#import random
+# import random
 #
 # Rock = ("""
 #     _______
@@ -445,7 +444,6 @@ comment
 #     print("")
 # for fruit in fruits:
 #     print(f"{name}  {fruit}")
-
 
 
 # print("Convert pounds into pounds")
@@ -647,46 +645,109 @@ comment
 # print(f'{4:>4}{frequency4:>13}')
 # print(f'{5:>4}{frequency5:>13}')
 # print(f'{6:>4}{frequency6:>13}')
+import os
+import pathlib
 import random
 
-def roll_dice():
- """Roll two dice and return their face values as a tuple."""
- die1 = random.randrange(1, 7)
- die2 = random.randrange(1, 7)
- return (die1, die2) # pack die face values into a tuple
+# def factorial(number):
+#     if number <= 1:
+#         return 1
+#     return number * factorial(number - 1)
 
-def display_dice(dice):
- """Display one roll of the two dice."""
- die1, die2 = dice # unpack the tuple into variables die1 and die2
- print(f'Player rolled {die1} + {die2} = {sum(dice)}')
 
-die_values = roll_dice() # first roll
-display_dice(die_values)
+# for i in range(11):
+# #     print(f"{i}! = {factorial(i)}")
+# import statistics
+# x =[1, 3, 4, 2, 6, 5, 3, 4, 5, 2]
+# mean_of_x =statistics.mode(x)
+# total = sum(x)
+# print(total)
+# print(statistics.pvariance([1,3,4,2,6,5,3,4,5,]))
+# from adder import add, double,greet
+# value = add(2, 2)
+# double_value = double(value)
+# print(double_value)
+#
+# from greet import greet
+# name = greet("real python")
+# print(name)
 
-# determine game status and point, based on first roll
-sum_of_dice = sum(die_values)
+# arithmetic = ["x + y", "x / y", "x - y", "x X y"]
+# random_symbols = random.choice(arithmetic)
+# if random_symbols == "x + y":
+#     print(1+2)
+# elif random_symbols == "x - y":
+#     print(1 - 2)
+# elif random_symbols == "x / y":
+#     print(1/2)
+# else:
+# #     print(1*2)
+# from  pathlib import Path
+# os.chdir(r"C:\Users\USER\Documents")
+# home = Path.home()
+# x = home / "Documents"
+# location = x / "hey.txt"
+# location.touch()
+# title = input("title: ")
+# body = input("body: ")
+# with location.open(mode="w", encoding="utf-8") as file:
+#     file.write(title + '\n' + body)
+# with location.open(mode="r", encoding="utf-8") as file:
+#         spliting = file.read().split("\n")
+#         print(spliting[1])
 
-if sum_of_dice in (7, 11): # win
- game_status = 'WON'
-elif sum_of_dice in (2, 3, 12): # lose
- game_status = 'LOST'
-else: # remember point
-    game_status = 'CONTINUE'
-    my_point = sum_of_dice
-    print('Point is', my_point)
+# def fact(n):
+#     if n <= 1:
+#         return 1
+#     return n * fact(n - 1)
+#
+# print(fact(4))
 
- # continue rolling until player wins or loses
-while game_status == 'CONTINUE':
- die_values = roll_dice()
- display_dice(die_values)
- sum_of_dice = sum(die_values)
- if sum_of_dice == my_point: # win by making point
-        game_status = 'WON'
- elif sum_of_dice == 7: # lose by rolling 7
-        game_status = 'LOST'
+# import json
+# config_dict = {
+#     "name": "Adeola",
+#     "age" : 18,
+#     1: "Birthday",
+#     "hobby": [1,2,3,4,5],
+#     "bool" : True}
+# with (open("config.json", "w")) as file_obj:
+#     json.dump(config_dict, file_obj)
+#
+# set1 = [12, 13, 6, 10]
+# set2 = [13, 10, 16, 15]
+# x = []
+# for i in set1:
+#    if i   in set2:
+#        x.append(i)
+# for j in set2:
+#     if j  in set1:
+#         x.append(j)
 
-# display "wins” or "loses” message
-if game_status == 'WON':
- print('Player wins')
-else:
- print('Player loses')
+# print(sum(x))
+# x = "12345"
+# y = []
+# y.extend(x)
+# print(y)
+# import turtle
+# # turtle.forward(100)
+# n = int(input())
+# lis = []
+# for i in str(n):
+#     lis.append(int(i))
+# print(lis)
+# sum = 0
+# for i in lis:
+#     if i >sum:
+#         sum = i
+#     print(sum)
+# lis.extend(n)
+# print(lis)
+# for i in lis:
+#     p.append(int(i))
+# print(p)
+# for number in  n:
+#     lis.append(number)
+# print(lis)
+
+name = {"name": "Adeola", "age": 18, "hobby": ["reading", "coding", "gaming", "music"]}
+print(name[1])
