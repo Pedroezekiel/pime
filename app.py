@@ -749,5 +749,4 @@ import random
 #     lis.append(number)
 # print(lis)
 
-name = {"name": "Adeola", "age": 18, "hobby": ["reading", "coding", "gaming", "music"]}
-print(name[1])
+

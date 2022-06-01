@@ -597,84 +597,9 @@
 # # print(numbers("123"))
 #
 #
-lis = [["empty", "empty", "<empty>"], ["<empty>", "<empty>", "<empty>"], ["<empty>", "<empty>", "<empty>"]]
-counter = 0
+from collections import Counter
 
-while True:
-    while counter < 5:
-        userinput = input("enter something")
-        if userinput == "1":
-            lis[0].remove(lis[0][0])
-            lis[0].insert(0, "x")
-            print(lis)
-        elif userinput == "2":
-            lis[0].remove(lis[0][1])
-            lis[0].insert(1, "x")
-            print(lis)
-        elif userinput == "3":
-            lis[0].remove(lis[0][2])
-            lis[0].insert(2, "x")
-            print(lis)
-        elif userinput == "4":
-            lis[1].remove(lis[1][0])
-            lis[1].insert(0, "x")
-            print(lis)
-        elif userinput == "5":
-            lis[1].remove(lis[1][2])
-            lis[1].insert(1, "x")
-            print(lis)
-        elif userinput == "6":
-            lis[1].remove(lis[1][2])
-            lis[1].insert(2, "x")
-            print(lis)
-        elif userinput == "7":
-            lis[2].remove(lis[2][0])
-            lis[2].insert(0, "x")
-            print(lis)
-        elif userinput == "8":
-            lis[2].remove(lis[2][1])
-            lis[2].insert(1, "x")
-            print(lis)
-        elif userinput == "9":
-            lis[2].remove(lis[2][2])
-            lis[2].insert(2, "x")
-            print(lis)
-        userinput2 = input("enter something")
-        if userinput2 == "1":
-            lis[0].remove(lis[0][0])
-            lis[0].insert(0, "o")
-            print(lis)
-        elif userinput2 == "2":
-            lis[0].remove(lis[0][1])
-            lis[0].insert(1, "o")
-            print(lis)
-        elif userinput2 == "3":
-            lis[0].remove(lis[0][2])
-            lis[0].insert(2, "o")
-            print(lis)
-        elif userinput2 == "4":
-            lis[1].remove(lis[1][0])
-            lis[1].insert(0, "o")
-            print(lis)
-        elif userinput2 == "5":
-            lis[1].remove(lis[1][2])
-            lis[1].insert(1, "o")
-            print(lis)
-        elif userinput2 == "6":
-            lis[1].remove(lis[1][2])
-            lis[1].insert(2, "o")
-            print(lis)
-        elif userinput2 == "7":
-            lis[2].remove(lis[2][0])
-            lis[2].insert(0, "o")
-            print(lis)
-        elif userinput2 == "8":
-            lis[2].remove(lis[2][1])
-            lis[2].insert(1, "o")
-            print(lis)
-        elif userinput2 == "9":
-            lis[2].remove(lis[2][2])
-            lis[2].insert(2, "o")
-            print(lis)
-        else:
-            print()
+sentence = "I am a good i am a boy".lower()
+sentence_counter = Counter(sentence.split())
+for i,y in sorted(sentence_counter.items()):
+    print(f" {i:>12}")
