@@ -1,6 +1,6 @@
 import random
 
-
+_
 def animals_tortoise():
     tortoise = random.randint(1, 10)
     if 1 <= tortoise <= 5:

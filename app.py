@@ -749,4 +749,37 @@ import random
 #     lis.append(number)
 # print(lis)
 
+# userinput = input()
+# stack = []
+# for bracket in userinput:
+#     if bracket in "{[(":
+#         stack.append(bracket)
+#     if bracket in "}])":
+#         peak = stack[-1]
+#         if bracket == ")" and peak == "(":
+#             stack.pop()
+#         elif bracket == "}" and peak == "{":
+#             stack.pop()
+#         elif bracket == "]" and peak == "[":
+#             stack.pop()
+#         else:
+#             print(False)
+#
+# if len(stack) == 0:
+#     print(True)
+# else:
+#     print(False)
+
+x = 1
+while(x <= 5):
+    i = x
+    while(i <= 5):
+        print('', end=" ")
+        i += 1
+    i = 1
+    while(i <= x ):
+            print("*", end=" ")
+            i += 1
+    x += 1
+    print()
 

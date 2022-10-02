@@ -33,7 +33,13 @@
 #
 # for i,y  in x_counter.items():
 #     print(f"{i  } | {  y}")
-import  collections
-Person = collections.namedtuple("person", "name age")
-p1 = Person(name="Adam", age=30)
-print(p1.name)
+# import  collections
+# Person = collections.namedtuple("person", "name age")
+# p1 = Person(name="Adam", age=30)
+# print(p1.name)
+# import requests
+# response = requests.get("https://api.binance.com/api/v3/depth")
+# fox  = response.json()
+# print(fox)
+# Import libraries
+

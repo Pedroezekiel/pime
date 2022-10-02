@@ -1,4 +1,6 @@
-from collections import  Counter
+from collections import Counter
+
+
 def words(list_of_words):
     word_counter = {}
     for i in sorted(list_of_words.split()):
@@ -7,8 +9,8 @@ def words(list_of_words):
         else:
             word_counter[i] = 1
     print(f"{'word':<12}counter")
-    for i,y in word_counter.items():
-        if y>1:
+    for i, y in word_counter.items():
+        if y > 1:
             print(f"{i:<12}    {y}")
 
 

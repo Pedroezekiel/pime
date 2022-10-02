@@ -6,5 +6,8 @@ def sentence(words):
         else:
             x[i] = 1
     return x
+
+
 print(sentence("i am a boy"))
+
 

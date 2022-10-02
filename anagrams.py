@@ -8,4 +8,4 @@ def possible_anagrams(userinput):
     return [(ch1 + ch2) for ch1 in rearranged_anagrams for ch2 in userinput]
 
 
-print(possible_anagrams("boy"))
+print(possible_anagrams("boyz"))

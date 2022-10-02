@@ -1,5 +1,5 @@
 class ShoppingCart:
-    def __init__(self, limit):
+    def __init__(self, limit: int):
         self.limit = limit
         self.item = []
 
@@ -9,4 +9,3 @@ class ShoppingCart:
         else:
             self.item.pop(0)
             self.item.insert(0, items)
-   

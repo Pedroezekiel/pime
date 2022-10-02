@@ -10,9 +10,12 @@ numbers_of_number = int(input("Enter number of number: "))
 numbers_of_symbol = int(input("Enter number of symbol: "))
 numbers_of_alphabeth = int(input("Enter number of alphabeth: "))
 passwords = []
+# for i in range(numbers_of_number):
+#     generated_password =random.choice(passwords_list[0])
+#     passwords
 for i in range(numbers_of_number):
-    generated_password =random.choice(passwords_list[0])
-    passwords.append(generated_password)
+    x = random.randint(1,9)
+    passwords.append(x)
 for i in range(numbers_of_symbol):
     generated_password = random.choice(passwords_list[1])
     passwords.append(generated_password)
